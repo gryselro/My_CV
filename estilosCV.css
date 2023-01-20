@@ -44,17 +44,16 @@ h3{
   
 }
 
-
-/* *{
-    color: rgb(89, 205, 89);
-}
-
-/*
 span{
-  font-style: normal;
-  font-family:Verdana;
-  font-weight:bold;
+  font-family:"Saira";
+  font-size:large;
+  font-weight:normal;
 }
+
+section{
+  border: style 4px; solid; color: rosybrown;
+}
+/*
 p {
     font-family:'Roboto', sans-serif;
     color:red;
