@@ -2,8 +2,8 @@
     width: 250px;
     height: 250px;
     background-image: url("https://randomuser.me/api/portraits/women/68.jpg");
-    background-color: rgb(170, 226, 170);
-    border: 3px solid rgb(42, 165, 42);
+    background-color:rgb(193, 245, 193) ;
+    border: 3px solid rgb(160, 238, 160);
     border-radius: 100%;
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /*  no repite la image */
