@@ -1,31 +1,18 @@
-.circulo {
-    width: 250px;
-    height: 250px;
-    background-image: url("https://randomuser.me/api/portraits/women/68.jpg");
-    background-color:peachpuff;
-    border: 4px solid rosybrown;
-    border-radius: 100%;
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /*  no repite la imageN */
-    background-size: cover; 
-    /* cambia tamaño de la imagen segun el contenedor */
-}
-
-*{
-  color: rgb(3, 24, 24);
-  font-size: medium;
-  font-family:Verdana;
-}
-
 h1{
-  font-family: "Saira"; 
+  font-family: 'Saira', sans-serif;
   color: rgb(155, 115, 115);
   font-size: 40px;
   text-shadow: 2px 2px 2px #b3b1b1;
 }
 
+*{
+  color: rgb(173, 119, 119);
+  font-size: medium;
+  font-family:'Trebuchet MS', sans-serif
+}
+
 h2{
-  font-family:"Saira";
+  font-family:'Saira', sans-serif;
   font-variant:small-caps;
   font-size:xx-large;
   font-weight: bold;
@@ -33,19 +20,54 @@ h2{
 }
 
 h3{
-  font-family:"Saira";
+  font-family:'Saira', sans-serif;
   font-size:large;
   font-weight: bold;
   color:rgb(53, 123, 123);
 }
 
 #titulo{
-  font-size:x-large;
+  font-size:x-large; 
+}
+
+.circulo, .circulosocial {
+    background-color:peachpuff;
+    border: 4px solid rosybrown;
+    border-radius: 100%;
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /*  no repite la imageN */
+    background-size: cover; /* cambia tamaño de la imagen segun el contenedor */
+}
+
+.circulo {
+  width: 250px;
+  height: 250px;
+  background-image: url("https://randomuser.me/api/portraits/women/68.jpg");
   
 }
 
+.circulosocial {
+  width: 50px;
+  height:50px;
+  border: 1px solid rosybrown;
+}
+
+#facebook{
+    background-image: url("facebook.png");}
+
+#twiter{
+  background-image: url("img twiter.jpg")}
+
+#instagram{
+  background-image: url("instagram.jpg")};
+
+
+
+
+
+
 span{
-  font-family:"Saira";
+  font-family:'Saira', sans-serif;
   font-size:large;
   font-weight:normal;
 }
@@ -99,5 +121,43 @@ section {
   body {
     background-color:mistyrose;
     }
-  
-    
+
+
+/*desde aqui es para prueba********************************/
+
+
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
