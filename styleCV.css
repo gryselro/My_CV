@@ -15,7 +15,6 @@ body{
 }
 
 .caja{
-    text-align:center;
     padding-bottom: 20px;
 }
 
@@ -25,7 +24,6 @@ body{
 }
 
 .latder{
-    text-align:center;
     grid-area: panelder;
     background-color:lightgrey;
 }
