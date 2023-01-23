@@ -5,12 +5,6 @@ h1{
   text-shadow: 2px 2px 2px #b3b1b1;
 }
 
-*{
-  color: rgb(173, 119, 119);
-  font-size: medium;
-  font-family:'Trebuchet MS', sans-serif
-}
-
 h2{
   font-family:'Saira', sans-serif;
   font-variant:small-caps;
@@ -26,8 +20,26 @@ h3{
   color:rgb(53, 123, 123);
 }
 
+#lista_izquierda {
+  color: whitesmoke;
+  font-size: medium;
+  font-family:'Trebuchet MS', sans-serif;
+}
+
+#lista_derecha {
+  color:rgb(155, 115, 115);
+  font-size: medium;
+  font-family:'Trebuchet MS', sans-serif
+}
+
 #titulo{
   font-size:x-large; 
+}
+
+span{
+  font-family:'Saira', sans-serif;
+  font-size:large;
+  font-weight:normal;
 }
 
 .circulo, .circulosocial {
@@ -43,7 +55,8 @@ h3{
   width: 250px;
   height: 250px;
   background-image: url("https://randomuser.me/api/portraits/women/68.jpg");
-  
+  margin-left: 60px;
+  margin-top: 25px;
 }
 
 .circulosocial {
@@ -62,102 +75,74 @@ h3{
   background-image: url("instagram.jpg")};
 
 
+main{
+  /*display:inline-flexbox;*/
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  vertical-align:auto;
+  justify-content:center;
+  
+}
+
+.panel_izquierdo {
+  display: table;
+  width: 30%;
+  height: 100%;
+  /*padding-left: 15px;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-left: 15px;
+  border-top: 15px;
+  box-sizing: border-box;
+  
+  
+  /*display:inline-flexbox;
+  flex-wrap: wrap;
+  vertical-align: auto;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;*/
 
 
+  float:left;
+  background-color: rgb(142, 141, 141); 
+}
+
+.panel_derecho {
+width: 69%;
+height: 100%;
+background-color: lightgrey;
+float:right;
+padding-bottom: 15px;
+/*margin-right: 15px;
+margin-top: 15px;
+border-right: 15px;
+border-top: 15px;
+display: inline-flexbox;
+/*flex-wrap: wrap;*/
 
 
-span{
-  font-family:'Saira', sans-serif;
-  font-size:large;
-  font-weight:normal;
 }
 
 section{
-  border: style 4px; solid; color: rosybrown;
+  display:table-cell;
+  /*vertical-align:baseline;
+  justify-content:space-around;
+  border: style 4px; solid; color: rosybrown;*/
+  margin-left: 10px;
 }
-/*
-p {
-    font-family:'Roboto', sans-serif;
-    color:red;
-    width: 300px;
-}
-/*
-esto es un comentario dentro de un archivo css 
-*/
-/*
-h1{
-    border:10px solid blueviolet;
-    padding-top: 30px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    margin: 60px 100px 20px 70px;
-    font-weight: bold;
-    color: rgb(160, 238, 160);
 
-}
-section {
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-  }
-  #mi_parrafo_especial {
-    color: aqua;
-    font-size: larger;
-    font-style: italic;
-    font-family: Verdana;
-  }
-  .estaesmiclase {
-    font-size: xx-large;
-    font-family: fantasy;
-    color: coral;
-  }
-  section h2 {
-    font-style: oblique;
-  }
- /*Aplicar color al fondo de la pagina */
+
  
   body {
     background-color:mistyrose;
     }
 
-
-/*desde aqui es para prueba********************************/
-
-
     @media (max-width: 600px) {
-      nav, article {
-        width: 100%;
-        height: auto;
+      main, .panel_derecho, .panel_izquierdo {
+        width:100%;
       }
+     
     }
-
-    /* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
